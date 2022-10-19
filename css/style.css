@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+  }
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    border-bottom: 2px solid #f7f7f7;
+    height: 70px;
+}
+
+.main-header{
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    
+}
+.main-header__logo{
+    margin-top: 10px;
+    display: flex;
+}
+
+.main-header__logo img{
+    margin-right: 0.5rem;
+}
+.main-header__nav{
+    display: flex;
+    width: 30%;
+    justify-content: space-around;
+    margin-top: 50px;
+    
+}
+
+.main-header__nav a{
+    color: #323642;
+    text-decoration: none;
+}
+
+.main-header__nav a:hover{
+    border-bottom: 3px solid #4CB649;
+    margin-bottom: 20px;
+}
+.main-header__button-time{
+    width: 90px;
+    height: 40px;
+    border-radius: 40px;
+    background-color: transparent;
+    border: 2px solid #4CB649;
+    color: #4CB649;
+    font-weight: 500;
+    font-size: 14px;
+    padding-top: 10px;
+    margin-top: 35px;
+    padding-left: 20px;
+    display: inherit;
+}
+.main-header__auth{
+    display: flex;
+    justify-content: center;
+}
+.button-filled{
+    height: 30px;
+    border-radius: 40px;
+    border: 2px solid #4CB649;
+    font-weight: 500;
+    font-size: 14px;
+    width: 160px;
+    background-color: #4CB649;
+    color:#FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.header h1 {
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.cart {
+    background: #f7f7f7;
+    min-height: calc(100vh - 72px);
+}
+
+.cart .cart-header {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.catalog .catalog-header {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+}
+.products-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+ul.products {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.product__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    
+}
+
+.product__image img {
+    width: 95%;
+    height: 95%;
+}
+
+ul li {
+    list-style: none;
+    margin: 20px;
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid gray;
+}
+
+/* .buy {
+    width: 100%;
+    height: 30px;
+    margin-top: 5px;
+    background: aquamarine;
+    border: 1px solid #50eab6;
+    border-radius: 3px;
+} */
+.buy:hover {
+    background: #50eab6;
+    cursor: pointer;
+    transform: scale(1.03);
+}
+.cart-total, .cart-content {
+    padding: 10px;
+}
+
+.cart__cell {
+    height: 6rem;
+    width: 100%;
+    background: #dad9d9;
+    border-radius: 10px;
+    display: flex;
+    margin-top: 10px;
+}
+
+.cart__img {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    padding: 3px;
+}
+.cart__img img {
+    width: 100%;
+    max-height: 5.5rem;
+    border-radius: 5px;
+}
+
+.cart__title {
+    flex: 4.5;
+    display: flex;
+}
+
+.cart__left {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    padding: 0.4rem 0 0 0.5rem; 
+}
+
+.cart__right {
+    width: 30%;
+    display: flex;
+    justify-content: right;
+    flex-flow: row wrap;
+    padding: 0.6rem 0.9rem 0.8rem 0;
+    align-content: space-between;
+}
+
+.cart__price {
+    flex: 0 1 100%;
+    margin-left: 3.2rem;
+}
+
+.cart__delete {
+    flex: 0 1 100%;
+    margin-left: 5.7rem;
+    
+
+}
+
+.cart__delete :hover {
+    color: #cc0c0c;
+}
+
+.cart__name {
+    font-size: 1.5rem;
+}
+
+.cart__count {
+    margin-top: 0.4rem;
+    margin-left: 0.3rem;
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+}
